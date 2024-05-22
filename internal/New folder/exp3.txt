@@ -1,0 +1,43 @@
+import numpy as np
+import pandas as pd
+import tensorflow as tf
+
+a=tf.constant(100)
+b=tf.constant(20)
+
+res1=tf.add(a,b)
+print(res1.numpy())
+
+res2=tf.subtract(a,b)
+print(res2.numpy())
+
+res3=tf.multiply(a,b)
+print(res3.numpy())
+
+res4=tf.divide(a,b)
+print(res4.numpy())
+
+mat1=[[1,2],[3,4]]
+mat2=[[10,20],[30,40]]
+
+transpose1=tf.transpose(mat1)
+print(transpose1)
+
+matmul1=tf.matmul(mat1,mat2)
+print(matmul1)
+
+
+a1=tf.Variable(100)
+b1=tf.Variable(20)
+
+r1=tf.add(a1,b1)
+print(res1.numpy())
+
+r2=tf.subtract(a1,b1)
+print(r2.numpy())
+
+r3=tf.multiply(a1,b1)
+print(r3.numpy())
+
+r4=tf.divide(a1,b1)
+print(r4.numpy())
